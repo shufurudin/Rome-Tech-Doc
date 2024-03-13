@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+#navbar {
+    width: 15%;
+    background-color: #AA0000;
+    color: white;
+    border-right: 5px dotted gold;
+    padding-right: 10px;
+}
+
+#main-doc {
+    width: 85%;
+    background: url(../img/papyrus-big.jpg) no-repeat center center fixed;
+    border-left: 5px dotted gold;
+    /* F5DBB4 */
+}
+
+/* .vl {
+    position: relative;
+    left: 90;
+    background-color: black;
+    width: 5px;
+    border-right: 5px dotted gold;
+} */
