@@ -21,7 +21,6 @@ p {
 
 #navbar {
     width: 80%;
-    height: 27%;
     margin: 0 auto 35px auto;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -33,6 +32,15 @@ p {
     font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#navbar span {
+    display: block;
+    padding: 15px 0 15px 0;
+}
+#navbar menu {
+    display: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 #navbar li {
     text-align: center;
@@ -60,8 +68,65 @@ p {
     width: 100%;
 }
 #main-doc header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
     font-size: 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+}
+#main-doc h2 {
+    vertical-align: middle;
+}
+#main-doc .header_1 {
+    background: url(../img/commodus-small.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+#main-doc .header_2 {
+    background: url(../img/Settimio_Severo.png) no-repeat center top fixed;
+    background-size: cover;
+}
+#main-doc .header_3 {
+    background: url(../img/Geta_and_Caracalla_small.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+#main-doc .header_4 {
+    background: url(../img/Alexander_Severus.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+#main-doc .header_5 {
+    background: url(../img/praetorian-guard-assassination.jpeg) no-repeat center top fixed;
+    background-size: cover;
+}
+#main-doc .header_6 {
+    background: url(../img/aurelian.png) no-repeat center top fixed;
+    background-size: cover;
+}
+#main-doc .header_7 {
+    background: url(../img/military_anarchy.jpeg) no-repeat center top fixed;
+    background-size: cover;
+}
+#main-doc .header_8 {
+    background: url(../img/diocletian.jpeg) no-repeat center top fixed;
+    background-size: cover;
+}
+#main-doc .header_9 {
+    background: url(../img/tetrarchy.jpg) no-repeat right top fixed;
+    background-size: cover;
+}
+#main-doc .header_a {
+    background: url(../img/martyr.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+#main-doc p {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    text-align: justify;
+    text-indent: 1.5em;
 }
 
 .scroll {
@@ -118,13 +183,4 @@ code::after {
     height: 101px;
     background: url(../img/scroll-bottom.png) no-repeat center center local;
     background-size: contain;
-}
-.shadow-right {
-    position: absolute;
-    left: 265px;
-    width: 50px;
-    height: 39%;
-    background-color: aqua;
-    /* box-shadow: 13px 0 5px -5px #333; */
-    /* z-index: 90; */
 }
