@@ -11,16 +11,31 @@ html {
 
 body {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     flex-direction: column;
 }
 
-p {
+p, li, figcaption {
     font-family: "Roboto Slab", sans-serif;
+    line-height: 1.45em;
+}
+
+figcaption {
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 1.3em;
+    letter-spacing: .3em;
+    text-shadow: 1px 0px 1px #aa000070;
+}
+ol {
+    text-align: center;
+    list-style: lower-greek;
+    list-style-position: inside;
 }
 
 #navbar {
-    width: 80%;
+    width: 300px;
     margin: 0 auto 35px auto;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -29,14 +44,15 @@ p {
     text-align: center;
 }
 #navbar header {
-    font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    font-size: 2em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 #navbar span {
     display: block;
     padding: 15px 0 15px 0;
+    cursor: pointer;
 }
 #navbar menu {
     display: none;
@@ -45,6 +61,7 @@ p {
 #navbar li {
     text-align: center;
     padding: 15px 0;
+    border-bottom: 1px solid #FDB402;
 }
 #navbar a {
     text-decoration: none;
@@ -52,16 +69,18 @@ p {
     font-family: "Roboto Slab", sans-serif;
 }
 .leaf-left-crown {
-    position: absolute;
-    top: -60px;
-    left: 17px;
+    position: relative;
+    top: -510px;
+    left: -120px;
     width: 150px;
+    margin-bottom: -600px;
 }
 .leaf-right-crown {
-    position: absolute;
-    top: -60px;
-    left: 210px;
+    position: relative;
+    top: -527px;
+    left: 120px;
     width: 150px;
+    margin-bottom: -600px;
 }
 
 #main-doc {
@@ -73,14 +92,22 @@ p {
     align-items: center;
     height: 100px;
     margin-bottom: 10px;
+    border-top: 1px solid #FDB402;
     font-size: 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 4px #FDB402;
+}
+#main-doc .header_1 {
+    border-top: none;
 }
 #main-doc h2 {
     vertical-align: middle;
+}
+#main-doc section {
+    margin-bottom: 30px;
 }
 #main-doc .header_1 {
     background: url(../img/commodus-small.jpg) no-repeat center top fixed;
@@ -123,64 +150,7 @@ p {
     background-size: cover;
 }
 #main-doc p {
-    margin-bottom: 30px;
     padding: 0 20px;
     text-align: justify;
     text-indent: 1.5em;
-}
-
-.scroll {
-    width: 87%;
-    display: block;
-    margin: auto;
-    
-}
-.scroll-top {
-    position: relative;
-    top: 11px;
-    left: 0px;
-    width: 350px;
-    height: 99px;
-    background: url(../img/scroll-top.png) no-repeat center center local;
-    background-size: contain;
-}
-code::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 51px;
-    width: 69.5%;
-    height: 100px;
-    box-shadow: 0 -10px 5px -5px #FEE9CF;
-    z-index: 2;
-}
-code {
-    position: relative;
-    padding: 0 60px;
-    width: 350px;
-    font-family: "Roboto Slab", sans-serif;
-    display: block;
-    background: url(../img/scroll-body.png) no-repeat center bottom local;
-    background-size: cover;
-}
-code::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 56%;
-    left: 55px;
-    width: 69%;
-    height: 100px;
-    box-shadow: 0 8px 5px -5px #FEE2C2;
-    /* FEE2C2 */
-    z-index: 2;
-}
-.scroll-bottom {
-    position: relative;
-    top: -13px;
-    left: 0px;
-    width: 350px;
-    height: 101px;
-    background: url(../img/scroll-bottom.png) no-repeat center center local;
-    background-size: contain;
 }

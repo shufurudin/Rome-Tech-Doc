@@ -1,71 +1,90 @@
-@media screen and (min-width: 1300px) {
-    #navbar {
-        width: 15%;
-        background-color: #AA0000;
-        color: white;
-        border-right: 5px solid transparent;
-        padding-right: 10px;
-        border-image: url(../img/border-left.png) 18 repeat;
+/* Typical Device Breakpoints (ver no W3C)
+
+    Pequenas telas: ~ até 600px
+    Celular: 600px até 768px
+    Tablet: 768px até 991px
+    Desktop: 992px até 1200px
+    Grandes telas: Acima de 1200px
+ */
+
+@media screen and (min-width: 768px) {
+    body {
+        flex-direction: row;
     }
 
-    #main-doc {
-        width: 85%;
-        padding-left: 30px;
+    #navbar {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100vh;
+        border-right: 5px solid transparent;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-image: url(../img/border-left.png) 18 repeat;
+        margin: 0;
+    }
+    #navbar span {
+        display: none;
+    }
+    #navbar menu {
+        display: block;
+        height: 50%;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #navbar .leaf-left-crown {
+        display: none;
+    }
+    #navbar .leaf-right-crown {
+        display: none;
+    }
+
+    .border {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100vh;
         border-left: 5px solid transparent;
         border-image: url(../img/border-right.png) 18 repeat;
     }
 
-    .scroll {
-        width: 10%;
-        display: block;
-        margin: auto;
-        
+    #main-doc {
+        width: 80%;
     }
-    .scroll-top {
-        position: relative;
-        top: 1px;
-        left: 3px;
-        width: 550px;
-        height: 99px;
-        background: url(../img/scroll-top.png) no-repeat center center local;
-        background-size: contain;
-    }
-    code::before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 82px;
-        width: 69.5%;
-        height: 100px;
-        box-shadow: 0 -10px 5px -5px #FEE9CF;
-        z-index: 2;
-    }
-    code {
-        position: relative;
-        padding: 0 100px;
-        width: 550px;
-        font-family: "Roboto Slab", sans-serif;
-        display: block;
-        background: url(../img/scroll-body.png) no-repeat center bottom local;
+    #main-doc .header_1 {
+        background: url(../img/commodus-small.jpg) no-repeat center center fixed;
         background-size: cover;
     }
-    code::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: -9%;
-        left: 86px;
-        width: 69%;
-        height: 100px;
-        box-shadow: 0 8px 5px -5px #FEE2C2;
-        z-index: 2;
+    #main-doc .header_3 {
+        background: url(../img/Geta_and_Caracalla.jpg) no-repeat center bottom fixed;
+        background-size: cover;
     }
-    .scroll-bottom {
-        position: relative;
-        left: -8px;
-        width: 565px;
-        height: 101px;
-        background: url(../img/scroll-bottom.png) no-repeat center center local;
-        background-size: contain;
+    #main-doc .header_8 {
+        background: url(../img/diocletian.jpeg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    #main-doc .header_a {
+        background: url(../img/martyr.jpg) no-repeat center bottom fixed;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    #navbar {
+        width: 15%;
+    }
+    #navbar menu {
+        height: 75%;
+    }
+
+    #main-doc {
+        width: 85%;
+    }
+    #main-doc .header_1 {
+        background: url(../img/commodus-small.jpg) no-repeat center bottom fixed;
+        background-size: cover;
     }
 }
