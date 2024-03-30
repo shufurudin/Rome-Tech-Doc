@@ -29,7 +29,7 @@
     }
     #navbar menu {
         display: block;
-        height: 50%;
+        height: 55%;
         padding: 0;
         overflow-y: auto;
         overflow-x: hidden;
@@ -53,6 +53,9 @@
 
     #main-doc {
         width: 80%;
+    }
+    #main-doc .header_1 {
+        margin-top: 60px;
     }
     #main-doc .header_1 {
         background: url(../img/commodus-small.jpg) no-repeat center center fixed;
@@ -86,5 +89,14 @@
     #main-doc .header_1 {
         background: url(../img/commodus-small.jpg) no-repeat center bottom fixed;
         background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #navbar menu {
+        height: 85%;
+    }
+    #main-doc p {
+        padding: 0 15vw;
     }
 }

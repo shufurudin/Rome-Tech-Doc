@@ -11,7 +11,6 @@ html {
 
 body {
     display: flex;
-    /* height: 100vh; */
     flex-direction: column;
 }
 
@@ -91,7 +90,7 @@ ol {
     justify-content: center;
     align-items: center;
     height: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-top: 1px solid #FDB402;
     font-size: 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -100,14 +99,11 @@ ol {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 4px #FDB402;
 }
-#main-doc .header_1 {
-    border-top: none;
-}
 #main-doc h2 {
     vertical-align: middle;
 }
 #main-doc section {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 #main-doc .header_1 {
     background: url(../img/commodus-small.jpg) no-repeat center top fixed;
