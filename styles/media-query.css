@@ -65,7 +65,7 @@
         background: url(../img/Geta_and_Caracalla.jpg) no-repeat center bottom fixed;
         background-size: cover;
     }
-    #main-doc .header_a {
+    #main-doc .header_9 {
         background: url(../img/martyr.jpg) no-repeat center bottom fixed;
         background-size: cover;
     }
@@ -94,5 +94,11 @@
     }
     #main-doc p {
         padding: 0 15vw;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    #main-doc p {
+        padding: 0 20vw;
     }
 }
