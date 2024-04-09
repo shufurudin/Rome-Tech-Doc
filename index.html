@@ -38,6 +38,14 @@
             <br>
             <p>A new blood run will occur after Commodus death in 192 anno domini, not quite different from what happened after the Emperor Nero death but even more aggressive. Pertinax assumed the government between January and March of 193 being raised by the praetorian guard against your will, a military discipline enthusiast began a reasonable and restorative reign but was brutally murdered by the same praetorian guard who put him there.</p>
             <p>The guards were just acting as mercenaries, the worst ones! The jurisconsult Dídio Juliano saw this praetorian guard's desire and used his wealth to buy them and take the empire, the soldiers praise and defend him while he gives them a bunch of drachmas, his government was ended by a murderer in July. Afterwards several legions with their generals claimed the empire for themselves, the Sirian’s raised Pescennius Niger, Britain's Albino and the Danubian’s Septimus Severus, the last one was victorious and entered Rome leading his troops.</p>
+            <figure class="image">
+                <figcaption>Map</figcaption>
+                <input type="range" name="bar1" id="bar1" min="1" max="2" value="1" onchange="imageFade1()">
+                <!-- <img src="img/map/I. Our beginning - the end of antonines/I. Our beginning - the end of antonines - 1ok.png" alt="map of Roman Empire" id="image-fade"> -->
+                <div class="container">
+                    <div id="image-fade1" class="image-fade"></div>
+                </div>
+            </figure>
             <figure>
                 <figcaption>Resume</figcaption>
                 <ol>
@@ -230,6 +238,15 @@
                 menu.style.display = "none";
                 navbar.style.borderBottomLeftRadius = "50%";
                 navbar.style.borderBottomRightRadius = "50%";
+            }
+        }
+        function imageFade1() {
+            var rage = document.getElementById("bar1");
+            var img = document.getElementById("image-fade1");
+            if (rage.value === "1") {
+                img.style.backgroundImage = "url(../img/map/I._Our_beginning_-_the_end_of_antonines/I._Our_beginning_-_the_end_of_antonines-1ok.png)"
+            } else {
+                img.src = "url(../img/map/I._Our_beginning_-_the_end_of_antonines/I._Our_beginning_-_the_end_of_antonines-2ok.png)"
             }
         }
     </script>

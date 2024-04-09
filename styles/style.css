@@ -27,6 +27,9 @@ figcaption {
     letter-spacing: .3em;
     text-shadow: 1px 0px 1px #aa000070;
 }
+.image {
+    display: none;
+}
 ol {
     text-align: center;
     list-style: lower-greek;
