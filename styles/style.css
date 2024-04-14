@@ -19,6 +19,16 @@ p, li, figcaption {
     line-height: 1.45em;
 }
 
+code {
+    display: flex;
+    justify-content: end;
+}
+img {
+    width: 100%;
+    max-width: 451px;
+    margin: auto;
+}
+
 figcaption {
     margin-top: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
