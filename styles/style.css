@@ -23,7 +23,7 @@ code {
     display: flex;
     justify-content: end;
 }
-img {
+.images {
     width: 100%;
     max-width: 451px;
     margin: auto;
@@ -158,4 +158,69 @@ ol {
     padding: 0 20px;
     text-align: justify;
     text-indent: 1.5em;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+#cntr {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+#cntr button {
+    width: 50px;
+    height: calc(0.25 * 768px);
+    box-sizing: border-box;
+    margin: 0 5px;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid transparent;
+    transition: 500ms;
+}
+#cntr button:hover{
+    border: 1px solid gold;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#cntr button:disabled{
+    background-color: rgb(177, 177, 177);
+    border: none;
+}
+#cntr button:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+#cntr button:disabled:active{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.material-symbols-sharp {
+    font-size: 50px;
+    color: gold;
+}
+.disabled {
+    color: rgb(150, 150, 150);
+}
+#cntr #left span{
+    margin-left: 10px;
+}
+
+#imgs #front {
+    position: absolute;
+    max-width: 70vw;
+    z-index: 1;
+}
+#imgs #back {
+    position: relative;
+    max-width: 70vw;
+    z-index: 0;
+}
+
+.transition {
+    transition: 2s;
+    opacity: 0;
 }
