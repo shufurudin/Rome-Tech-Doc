@@ -5,7 +5,7 @@ const backImg = document.querySelectorAll("#back")
 
 const imgs = [
     {
-        images: ["img/slides/1/1.jpg", "img/slides/1/2.jpg"],
+        images: ["img/slides/1/slide_1.png", "img/slides/1/slide_2.png"],
         pos: 0
     },
     {
