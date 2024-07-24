@@ -86,6 +86,13 @@
         background: url(../img/commodus-small.jpg) no-repeat center bottom fixed;
         background-size: cover;
     }
+
+    .slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 1200px) {

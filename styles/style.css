@@ -161,10 +161,7 @@ ol {
 }
 
 .slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
+    display: none;
 }
 #cntr {
     display: flex;
